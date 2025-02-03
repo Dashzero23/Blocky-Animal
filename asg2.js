@@ -244,7 +244,7 @@ function renderAllShapes()
 
   var backLeft1 = new Cube();
   backLeft1.color = color;
-  backLeft1.matrix.rotate(-upperAngle, 0, 0, 1);
+  //backLeft1.matrix.rotate(-upperAngle, 0, 0, 1);
   var backLeftCoord = new Matrix4(backLeft1.matrix);
   backLeft1.matrix.scale(0.1, -0.2, 0.1);
   backLeft1.matrix.translate(-1.15, -0.25, 3);
@@ -253,14 +253,14 @@ function renderAllShapes()
   var backLeft2 = new Cube();
   backLeft2.color = color;
   backLeft2.matrix = backLeftCoord;
-  backLeft2.matrix.rotate(-lowerAngle, 0, 0, 1);
+  //backLeft2.matrix.rotate(-lowerAngle, 0, 0, 1);
   backLeft2.matrix.scale(0.11, 0.11, 0.11);
   backLeft2.matrix.translate(-1.1, -2, 2.7);
   backLeft2.render();
 
   var backRight1 = new Cube();
   backRight1.color = color;
-  backRight1.matrix.rotate(upperAngle, 0, 0, 1);
+  //backRight1.matrix.rotate(upperAngle, 0, 0, 1);
   var backRightCoord = new Matrix4(backRight1.matrix);
   backRight1.matrix.scale(0.1, -0.2, 0.1);
   backRight1.matrix.translate(0.2, -0.25, 3);
@@ -269,7 +269,7 @@ function renderAllShapes()
   var backRight2 = new Cube();
   backRight2.color = color;
   backRight2.matrix = backRightCoord;
-  backRight2.matrix.rotate(lowerAngle, 0, 0, 1);
+  //backRight2.matrix.rotate(lowerAngle, 0, 0, 1);
   backRight2.matrix.scale(0.11, 0.11, 0.11);
   backRight2.matrix.translate(0.15, -2, 2.7);
   backRight2.render();
