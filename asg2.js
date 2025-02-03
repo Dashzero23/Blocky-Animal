@@ -210,7 +210,7 @@ function renderAllShapes()
   // LEGS
   var frontLeft1 = new Cube();
   frontLeft1.color = color;
-  frontLeft1.matrix.rotate(-upperAngle, 0, 0, 1);
+  frontLeft1.matrix.rotate(-upperAngle, 1, 0, 0);
   var frontLeftCoord = new Matrix4(frontLeft1.matrix);
   frontLeft1.matrix.scale(0.1, -0.2, 0.1);
   frontLeft1.matrix.translate(-1.15, -0.25, -0.75);
@@ -219,7 +219,7 @@ function renderAllShapes()
   var frontLeft2 = new Cube();
   frontLeft2.color = color;
   frontLeft2.matrix = frontLeftCoord;
-  frontLeft2.matrix.rotate(-lowerAngle, 0, 0, 1);
+  frontLeft2.matrix.rotate(-lowerAngle, 1, 0, 0);
   frontLeft2.matrix.scale(0.11, 0.11, 0.11);
   frontLeft2.matrix.translate(-1.1, -2, -0.7);
   frontLeft2.render();
@@ -227,7 +227,7 @@ function renderAllShapes()
 
   var frontRight1 = new Cube();
   frontRight1.color = color;
-  frontRight1.matrix.rotate(upperAngle, 0, 0, 1);
+  frontRight1.matrix.rotate(upperAngle, 1, 0, 0);
   var frontRightCoord = new Matrix4(frontRight1.matrix);
   frontRight1.matrix.scale(0.1, -0.2, 0.1);
   frontRight1.matrix.translate(0.2, -0.25, -0.75);
@@ -236,7 +236,7 @@ function renderAllShapes()
   var frontRight2 = new Cube();
   frontRight2.color = color;
   frontRight2.matrix = frontRightCoord;
-  frontRight2.matrix.rotate(lowerAngle, 0, 0, 1);
+  frontRight2.matrix.rotate(lowerAngle, 1, 0, 0);
   frontRight2.matrix.scale(0.11, 0.11, 0.11);
   frontRight2.matrix.translate(0.15, -2, -0.7);
   frontRight2.render();
